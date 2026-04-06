@@ -80,7 +80,7 @@ export function Home() {
       </motion.div>
 
       {/* ── Main content — offset by sidebar on desktop ── */}
-      <main className="lg:ml-[220px] relative w-full overflow-x-hidden">
+      <main className="lg:ml-[220px] relative">
         <Hero />
         <About />
         <Projects />
