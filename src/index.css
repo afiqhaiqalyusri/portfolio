@@ -1,6 +1,8 @@
+/* MUST BE FIRST */
+@import "./styles/theme.css";
+@import "./styles/fonts.css";
+
+/* THEN Tailwind */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@import "./styles/theme.css";
-@import "./styles/fonts.css";
