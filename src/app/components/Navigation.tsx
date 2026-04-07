@@ -25,8 +25,8 @@ const navItems = [
 ];
 
 const socials = [
-  { icon: Github, href: "https://github.com", label: "GitHub" },
-  { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
+  { icon: Github, href: "https://github.com/afiqhaiqalyusri", label: "GitHub" },
+  { icon: Linkedin, href: "https://www.linkedin.com/in/afiq-haiqal-yusri-a27329337", label: "LinkedIn" },
   { icon: Twitter, href: "https://twitter.com", label: "Twitter" },
 ];
 

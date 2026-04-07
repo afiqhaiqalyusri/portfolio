@@ -7,20 +7,18 @@ const skillGroups = [
   {
     category: "Frontend",
     skills: [
-      { name: "React", icon: "react", level: 5 },
-      { name: "TypeScript", icon: "typescript", level: 5 },
-      { name: "Next.js", icon: "nextdotjs", level: 5 },
+      { name: "React", icon: "react", level: 3 },
+      { name: "TypeScript", icon: "typescript", level: 3 },
+      { name: "Next.js", icon: "nextdotjs", level: 3 },
       { name: "Tailwind CSS", icon: "tailwindcss", level: 4 },
-      { name: "Framer", icon: "framer", level: 4 },
+      { name: "CSS3", icon: "css3", level: 5 },
     ],
   },
   {
     category: "Design",
     skills: [
       { name: "Figma", icon: "figma", level: 5 },
-      { name: "Storybook", icon: "storybook", level: 4 },
-      { name: "Adobe XD", icon: "adobexd", level: 3 },
-      { name: "Webflow", icon: "webflow", level: 3 },
+      { name: "Canva", icon: "canva", level: 5 },
     ],
   },
   {
@@ -28,36 +26,24 @@ const skillGroups = [
     skills: [
       { name: "Node.js", icon: "nodedotjs", level: 4 },
       { name: "PostgreSQL", icon: "postgresql", level: 4 },
-      { name: "GraphQL", icon: "graphql", level: 3 },
-      { name: "MongoDB", icon: "mongodb", level: 3 },
-      { name: "Supabase", icon: "supabase", level: 4 },
-    ],
-  },
-  {
-    category: "Mobile",
-    skills: [
-      { name: "React Native", icon: "react", level: 4 },
-      { name: "Expo", icon: "expo", level: 4 },
-      { name: "Redux", icon: "redux", level: 4 },
-      { name: "Firebase", icon: "firebase", level: 3 },
+      { name: "MySQL", icon: "mysql", level: 3 },
+      { name: "", icon: "mongodb", level: 3 },
+      { name: "Java", icon: "java", level: 5 },
     ],
   },
   {
     category: "DevOps",
     skills: [
-      { name: "Docker", icon: "docker", level: 3 },
-      { name: "Vercel", icon: "vercel", level: 5 },
-      { name: "AWS", icon: "amazonaws", level: 3 },
+      { name: "Docker", icon: "docker", level: 4 },
+      { name: "Vercel", icon: "vercel", level: 3 },
       { name: "GitHub Actions", icon: "githubactions", level: 4 },
     ],
   },
   {
     category: "Tooling",
     skills: [
-      { name: "Git", icon: "git", level: 5 },
-      { name: "Vite", icon: "vite", level: 5 },
-      { name: "Webpack", icon: "webpack", level: 4 },
-      { name: "pnpm", icon: "pnpm", level: 4 },
+      { name: "Git", icon: "git", level: 3 },
+      { name: "Vite", icon: "vite", level: 3 },
     ],
   },
 ];
@@ -65,49 +51,18 @@ const skillGroups = [
 // ── Achievements ───────────────────────────────────────────────────────────────
 const achievements = [
   {
-    emoji: "🏆",
-    title: "Best Developer Experience",
-    org: "ProductHunt Awards",
-    year: "2023",
+    emoji: "🌟",
+    title: "UMP Hackathon X Smart City ",
+    org: "Competitor (Gamified LMS)",
+    year: "2025",
   },
-  {
-    emoji: "🎙",
-    title: "Conference Speaker",
-    org: "React Summit — Amsterdam",
-    year: "2023",
-  },
-  {
-    emoji: "⭐",
-    title: "Top Open-Source Contributor",
-    org: "GitHub Accelerator",
-    year: "2022",
-  },
-  {
-    emoji: "📝",
-    title: "Featured Author",
-    org: "Smashing Magazine",
-    year: "2022",
-  },
-  {
-    emoji: "🥇",
-    title: "1st Place — UX Hackathon",
-    org: "Figma Config",
-    year: "2021",
-  },
-  {
-    emoji: "🎓",
-    title: "Honors Graduate",
-    org: "UC Berkeley — CS",
-    year: "2019",
-  },
+
 ];
 
 // ── Spoken languages ───────────────────────────────────────────────────────────
 const languages = [
-  { flag: "🇬🇧", code: "EN", name: "English", level: "Native", pct: 100 },
-  { flag: "🇫🇷", code: "FR", name: "French", level: "Fluent", pct: 82 },
-  { flag: "🇪🇸", code: "ES", name: "Spanish", level: "Professional", pct: 62 },
-  { flag: "🇩🇪", code: "DE", name: "German", level: "Conversational", pct: 40 },
+  { flag: "MY", code: "MY", name: "Melayu", level: "Native", pct: 100 },
+  { flag: "🇬🇧", code: "EN", name: "English", level: "Professional", pct: 68 },
 ];
 
 // ── Skill badge ────────────────────────────────────────────────────────────────
@@ -477,8 +432,8 @@ export function Skills() {
                   "Design Thinking",
                   "Team Leadership",
                   "Agile / Scrum",
-                  "Mentoring",
-                  "Public Speaking",
+                  "Work Under Pressure",
+                  "Adaptability",
                   "UX Research",
                 ].map((s) => (
                   <span

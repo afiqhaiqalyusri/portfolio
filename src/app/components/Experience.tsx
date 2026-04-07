@@ -4,74 +4,54 @@ import { Download, Briefcase, GraduationCap } from "lucide-react";
 
 // ── Data ───────────────────────────────────────────────────────
 const experiences = [
-  {
-    year: "2023 — Present",
-    role: "Senior Frontend Engineer",
-    company: "Arcadia Labs",
+{
+    year: "2023 - Present",
+    role: "Junior Developer",
+    company: "Freelance",
     type: "Full-time",
     description:
-      "Leading the frontend architecture for a SaaS analytics platform serving 50K+ users. Spearheading design system adoption and performance optimisation.",
+      "Supporting clients by creating clean, responsive frontend solutions tailored to their needs.",
   },
+
   {
-    year: "2022 — 2023",
-    role: "UI/UX Designer & Developer",
-    company: "Stratum Agency",
+    year: "2022 — Present",
+    role: "Development Programmer",
+    company: "Burning Centipede Tech Solution",
     type: "Full-time",
     description:
-      "Designed and built brand experiences for clients across fintech, retail, and healthtech. Owned projects from wireframe through production.",
+      "Developing efficient, user-focused web solutions through clean and structured code.",
   },
-  {
-    year: "2021 — 2022",
-    role: "React Developer",
-    company: "Nucleus Digital",
-    type: "Full-time",
-    description:
-      "Developed component-driven web apps for early-stage startups. Implemented complex UI patterns, animations, and accessibility standards.",
-  },
-  {
-    year: "2020 — 2021",
-    role: "Freelance Designer & Developer",
-    company: "Independent",
-    type: "Freelance",
-    description:
-      "Worked with small businesses and founders to build their first digital presence — from branding through web development.",
-  },
+  
 ];
 
 const educations = [
   {
-    year: "2019 — 2021",
-    degree: "MSc Human-Computer Interaction",
-    institution: "Stanford University",
-    type: "Postgraduate",
-    description:
-      "Focused on interaction design, research methodologies, and accessibility. Thesis on motion design's role in product cognition and usability.",
-  },
-  {
-    year: "2015 — 2019",
-    degree: "BSc Computer Science",
-    institution: "UC Berkeley",
+    year: "2023 — Present",
+    degree: "Bachelor of Computer Science (Maritime Informatics) with Honours",
+    institution: "Universiti Malaysia Terengganu (UMT)",
     type: "Undergraduate",
     description:
-      "Specialisation in software engineering and human-computer interaction. Graduated with Honors. Active member of the Design Research Lab.",
+      "Currently pursuing a degree in Computer Science with a focus on programming, web development, and UI/UX. Gaining hands-on experience through academic projects including an e-commerce system.",
   },
   {
-    year: "2022",
-    degree: "Google UX Design Certificate",
-    institution: "Google / Coursera",
-    type: "Certificate",
+    year: "2023",
+    degree: "Matriculation Programme (Computer Science Stream)",
+    institution: "Penang Matriculation College",
+    type: "Pre-University",
     description:
-      "Seven-course professional programme covering the full UX process — from empathy mapping through usability testing and iteration.",
+      "Completed foundation studies in computer science, developing fundamental knowledge in programming, problem-solving, and analytical thinking.",
   },
+
   {
-    year: "2021",
-    degree: "AWS Solutions Architect",
-    institution: "Amazon Web Services",
-    type: "Certificate",
+    year: "2016 - 2020",
+    degree: "Sijil Pelajaran Malayasia (Science Stream)",
+    institution: "SMK Raja Tun Uda",
+    type: "High School",
     description:
-      "Validated ability to design distributed systems on AWS with a focus on high availability, fault tolerance, and scalability.",
+     "Completed secondary education with a focus on science subjects, developing strong analytical thinking, discipline, and problem-solving skills."
   },
 ];
+
 
 // ── Single timeline entry ──────────────────────────────────────
 function TimelineEntry({
@@ -283,26 +263,6 @@ export function Experience() {
             </span>
             <div className="w-10 h-px bg-[#f5f4f0]/[0.08]" />
           </motion.div>
-
-          {/* Right: Request CV button */}
-          <motion.button
-            initial={{ opacity: 0, y: -10 }}
-            animate={isInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            onClick={() => window.open("/cv.pdf", "_blank")}
-            className="group flex items-center gap-2.5 border border-[#f5f4f0]/12 hover:border-[#c4b5a0]/45 bg-transparent hover:bg-[#c4b5a0]/05 px-4 py-2.5 transition-all duration-400"
-          >
-            <span
-              className="text-[#f5f4f0]/38 group-hover:text-[#f5f4f0]/70 tracking-[0.18em] uppercase transition-colors duration-300"
-              style={{ fontFamily: "'Inter', sans-serif", fontSize: "0.65rem" }}
-            >
-              Request CV
-            </span>
-            <Download
-              size={11}
-              className="text-[#c4b5a0]/35 group-hover:text-[#c4b5a0]/70 group-hover:translate-y-[1px] transition-all duration-300"
-            />
-          </motion.button>
         </div>
 
         {/* ── Big title ── */}

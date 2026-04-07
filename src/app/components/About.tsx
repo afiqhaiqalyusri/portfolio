@@ -96,26 +96,27 @@ export function About() {
                   className="text-[#0a0a0a]/52 leading-relaxed"
                   style={{ fontFamily: "'Inter', sans-serif", fontWeight: 300 }}
                 >
-                  I'm Jane Doe — a developer and designer who's spent the last 5
-                  years building digital products that earn trust through clarity
-                  and craft.
+                  I’m Afiq — a frontend developer who enjoys turning ideas into simple, 
+                  clean, and meaningful digital experiences.
                 </p>
                 <p
                   className="text-[#0a0a0a]/52 leading-relaxed"
                   style={{ fontFamily: "'Inter', sans-serif", fontWeight: 300 }}
                 >
-                  My work lives at the intersection of engineering and design. I
-                  care deeply about the details that most people never notice but
-                  always feel — the micro-interactions, the typographic rhythm,
-                  the seamless transitions.
+                  My work focuses on the balance between design and functionality. 
+                  I pay attention to the small details — spacing, layout, and user 
+                  flow — because those are the things users may not see, but always feel.
                 </p>
                 <p
                   className="text-[#0a0a0a]/52 leading-relaxed"
                   style={{ fontFamily: "'Inter', sans-serif", fontWeight: 300 }}
                 >
-                  When I'm not pushing pixels or writing code, I'm contributing
-                  to open source, mentoring junior developers, and exploring the
-                  outer edges of what's possible on the web.
+                  I’m still early in my journey, but I’ve built projects like an e-commerce 
+                  platform and a some random system, learning through real challenges, 
+                  mistakes, and constant improvement.
+
+                  When I’m not coding, I’m exploring new design ideas, improving my skills, 
+                  or figuring out why something worked yesterday but not today.
                 </p>
               </motion.div>
 

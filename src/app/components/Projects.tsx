@@ -7,14 +7,14 @@ const projects = [
   {
     id: 1,
     index: "01",
-    title: "Luminary Store",
+    title: "Bukan Kedai Burger",
     category: "E-Commerce · Web App",
-    year: "2024",
+    year: "2026",
     description:
-      "A full-featured luxury e-commerce platform with seamless payment integration, real-time inventory, and cinematic product showcasing.",
+      "A full-featured professional e-commerce platform with seamless payment integration, real-time inventory, and kitchen display features.",
     image:
       "https://images.unsplash.com/photo-1677530410699-f692c94cf806?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBlY29tbWVyY2UlMjBkYXJrJTIwcHJvZHVjdCUyMHNob3djYXNlfGVufDF8fHx8MTc3NTM1OTY1MXww&ixlib=rb-4.1.0&q=80&w=1080",
-    tags: ["React", "Node.js", "MongoDB", "Stripe"],
+    tags: ["React", "Node.js", "PostgreSQL", "Spring Boot"],
     // wide card (left) in row 1
     col: "lg:col-span-7",
     rowH: "h-[260px] lg:h-[490px]",

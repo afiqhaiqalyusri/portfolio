@@ -3,8 +3,8 @@ import { motion, useInView } from "motion/react";
 import { Github, Linkedin, Twitter, ArrowUpRight } from "lucide-react";
 
 const socials = [
-  { label: "GitHub", icon: Github, href: "https://github.com" },
-  { label: "LinkedIn", icon: Linkedin, href: "https://linkedin.com" },
+  { label: "GitHub", icon: Github, href: "https://github.com/afiqhaiqalyusri" },
+  { label: "LinkedIn", icon: Linkedin, href: "www.linkedin.com/in/afiq-haiqal-yusri-a27329337" },
   { label: "Twitter", icon: Twitter, href: "https://twitter.com" },
 ];
 
@@ -108,7 +108,7 @@ export function Contact() {
               className="group inline-flex items-center gap-3 text-[#f5f4f0] border-b border-[#f5f4f0]/20 pb-1 hover:border-[#c4b5a0] transition-colors duration-300 mb-16"
               style={{ fontFamily: "'Syne', sans-serif", fontWeight: 600, fontSize: "1.1rem" }}
             >
-              jane@example.com
+              afiqhaiqal.yusri@gmail.com
               <ArrowUpRight
                 size={16}
                 className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-300 text-[#c4b5a0]"
@@ -204,7 +204,7 @@ export function Contact() {
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    placeholder="your@email.com"
+                    placeholder="email@gmail.com"
                     className="w-full bg-transparent border-b border-[#f5f4f0]/10 focus:border-[#f5f4f0]/40 text-[#f5f4f0] placeholder-[#f5f4f0]/20 pb-3 outline-none transition-colors duration-300"
                     style={{ fontFamily: "'Inter', sans-serif", fontWeight: 300 }}
                   />

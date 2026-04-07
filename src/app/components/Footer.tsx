@@ -8,8 +8,8 @@ const links = [
 ];
 
 const socials = [
-  { icon: Github, href: "https://github.com", label: "GitHub" },
-  { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
+  { icon: Github, href: "https://github.com/afiqhaiqalyusri", label: "GitHub" },
+  { icon: Linkedin, href: "https://www.linkedin.com/in/afiq-haiqal-yusri-a27329337", label: "LinkedIn" },
   { icon: Twitter, href: "https://twitter.com", label: "Twitter" },
 ];
 
@@ -27,13 +27,13 @@ export function Footer() {
               className="text-[#f5f4f0] tracking-[0.25em] text-xl uppercase mb-3"
               style={{ fontFamily: "'Syne', sans-serif", fontWeight: 800 }}
             >
-              JD.
+              AH.
             </div>
             <p
               className="text-[#f5f4f0]/30 max-w-xs leading-relaxed"
               style={{ fontFamily: "'Inter', sans-serif", fontWeight: 300, fontSize: "0.85rem" }}
             >
-              Full Stack Developer & UI/UX Designer crafting premium digital experiences.
+              FrondEnd Developer & UI/UX Designer crafting premium digital experiences.
             </p>
           </div>
 
@@ -74,7 +74,7 @@ export function Footer() {
             className="text-[#f5f4f0]/20 text-xs tracking-widest"
             style={{ fontFamily: "'Inter', sans-serif" }}
           >
-            © {new Date().getFullYear()} Jane Doe. All rights reserved.
+            © {new Date().getFullYear()} Afiq Haiqal. All rights reserved.
           </p>
           <p
             className="text-[#f5f4f0]/20 text-xs"

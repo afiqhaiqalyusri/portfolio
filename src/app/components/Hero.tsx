@@ -10,8 +10,8 @@ const lines = [
     parts: [
       { text: "<", accent: true, highlight: false, muted: false },
       { text: "Hi, I'm ", accent: false, highlight: false, muted: true },
-      { text: "Jane", accent: false, highlight: true, muted: false },
-      { text: " Doe", accent: false, highlight: false, muted: false },
+      { text: "Afiq", accent: false, highlight: true, muted: false },
+      { text: " Haiqal", accent: false, highlight: false, muted: false },
       { text: " .>", accent: true, highlight: false, muted: false },
     ],
   },
@@ -305,9 +305,9 @@ export function Hero() {
               className="mt-14 pt-6 border-t border-white/[0.06] grid grid-cols-3 gap-0"
             >
               {[
-                { value: "5+", label: "Years" },
-                { value: "50+", label: "Projects" },
-                { value: "30+", label: "Clients" },
+                { value: "3+", label: "Years" },
+                { value: "10+", label: "Projects" },
+                { value: "10+", label: "Clients" },
               ].map((stat, i) => (
                 <div
                   key={stat.label}
