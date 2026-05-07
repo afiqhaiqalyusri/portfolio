@@ -274,7 +274,7 @@ Please change the parent <Route path="${P}"> to <Route path="${P==="/"?"*":`${P}
               group-hover:translate-x-0.5
               group-hover:-translate-y-0.5
               transition-transform duration-300
-            `}),'git init git add . git commit -m "Initial portfolio upload"']}),w.jsxs("button",{onClick:()=>window.open("public/cv.pdf","_blank"),className:`
+            `})]}),w.jsxs("button",{onClick:()=>window.open("public/cv.pdf","_blank"),className:`
             group flex items-center gap-2.5
             px-4 py-2
             md:px-5 md:py-2.5
