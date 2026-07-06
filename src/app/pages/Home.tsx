@@ -11,7 +11,6 @@ import { Experience } from "../components/Experience";
 import { Contact } from "../components/Contact";
 import { Footer } from "../components/Footer";
 import { CustomCursor } from "../components/CustomCursor";
-import { EopSection } from "../components/EopSection";
 
 export function Home() {
   const { scrollYProgress } = useScroll();
@@ -26,7 +25,6 @@ export function Home() {
   { id: "projects", light: false },
   { id: "skills", light: true },
   { id: "experience", light: false },
-  { id: "eop", light: true },
   { id: "contact", light: false },
 ];
 
@@ -217,7 +215,6 @@ export function Home() {
         <Projects />
         <Skills />
         <Experience />
-        <EopSection />
         <Contact />
         <Footer />
       </main>

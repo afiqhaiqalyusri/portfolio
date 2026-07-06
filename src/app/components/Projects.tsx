@@ -1,6 +1,7 @@
 import { useRef, useState } from "react";
 import { motion, AnimatePresence, useInView } from "motion/react";
 import { ArrowUpRight } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 
 const projects = [
@@ -51,7 +52,7 @@ const projects = [
   },
 
   {
-    id: 3,
+    id: 4,
     index: "04",
     title: "Mini Weather Station IoT Project ",
     category: "IoT · UI/UX Design",
@@ -62,8 +63,23 @@ const projects = [
       "https://images.unsplash.com/photo-1720135885007-454165745e21?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2JpbGUlMjBhcHAlMjBkZXNpZ24lMjBmaXRuZXNzJTIwZGFyayUyMGludGVyZmFjZXxlbnwxfHx8fDE3NzUzNTk2NTF8MA&ixlib=rb-4.1.0&q=80&w=1080",
     tags: ["Python", "Raspberry Pi Pico W", "ThingSpeak"],
     // narrow card (left) in row 2
-    col: "lg:col-span-5",
+    col: "lg:col-span-4",
     rowH: "h-[260px] lg:h-[420px]",
+  },
+  {
+    id: 5,
+    index: "05",
+    title: "English for Educational Purpose",
+    category: "Academic · Portfolio",
+    year: "2024",
+    description:
+      "A comprehensive collection of my coursework, reflections, and assignments demonstrating proficiency in academic English communication.",
+    image:
+      "https://images.unsplash.com/photo-1455390582262-044cdead27d1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhY2FkZW1pYyUyMHdyaXRpbmd8ZW58MHx8fHwxNzc1MzU5NjUxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+    tags: ["Writing", "Research", "Analysis"],
+    col: "lg:col-span-3",
+    rowH: "h-[260px] lg:h-[420px]",
+    link: "/eop",
   },
 ];
 
@@ -77,9 +93,15 @@ function ProjectCard({
   isInView: boolean;
 }) {
   const [hovered, setHovered] = useState(false);
+  const navigate = useNavigate();
 
   return (
     <motion.div
+      onClick={() => {
+        if (project.link) {
+          navigate(project.link);
+        }
+      }}
       className={`relative overflow-hidden cursor-pointer group ${project.col} ${project.rowH}`}
       initial={{ opacity: 0, y: 32 }}
       animate={isInView ? { opacity: 1, y: 0 } : {}}

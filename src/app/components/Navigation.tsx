@@ -12,7 +12,6 @@ import {
   Github,
   Linkedin,
   Twitter,
-  BookOpen,
 } from "lucide-react";
 
 const navItems = [
@@ -21,7 +20,6 @@ const navItems = [
   { label: "Work", id: "projects", icon: FolderOpen },
   { label: "Skills", id: "skills", icon: Zap },
   { label: "Journey", id: "experience", icon: Clock },
-  { label: "EOP", id: "eop", icon: BookOpen },
   { label: "Contact", id: "contact", icon: Mail },
 ];
 
@@ -81,7 +79,6 @@ export function Navigation() {
       { id: "projects", light: false },
       { id: "skills", light: true },
       { id: "experience", light: false },
-      { id: "eop", light: true },
       { id: "contact", light: false },
     ];
 
