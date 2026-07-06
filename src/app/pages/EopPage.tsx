@@ -206,23 +206,45 @@ export function EopPage() {
               
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {Array.from({ length: 14 }).map((_, i) => (
-                  <a
+                  <div
                     key={i}
-                    href="https://youtube.com" // Placeholder link
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="group block p-6 border border-white/[0.05] bg-[#111111] hover:border-[#c4b5a0]/40 transition-colors duration-300"
+                    className="p-6 border border-white/[0.05] bg-[#111111] hover:border-[#c4b5a0]/40 transition-colors duration-300 flex flex-col h-full"
                   >
-                    <div className="flex items-center justify-between mb-3">
-                      <h3 className="text-[#f5f4f0] font-['Syne'] text-xl font-bold group-hover:text-[#c4b5a0] transition-colors duration-300">
+                    <div className="mb-4">
+                      <h3 className="text-[#f5f4f0] font-['Syne'] text-xl font-bold mb-1">
                         Week {i + 1}
                       </h3>
-                      <ArrowUpRight size={18} className="text-[#f5f4f0]/30 group-hover:text-[#c4b5a0] transition-colors duration-300" />
+                      <p className="text-[#f5f4f0]/50 font-['Inter'] text-xs font-light">
+                        Select a video presentation to watch:
+                      </p>
                     </div>
-                    <p className="text-[#f5f4f0]/50 font-['Inter'] text-sm font-light">
-                      Watch the video presentation for Week {i + 1}.
-                    </p>
-                  </a>
+                    
+                    <div className="mt-auto space-y-2">
+                      <a
+                        href="https://youtube.com" // Placeholder for video 1
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="group flex items-center justify-between p-3 border border-white/[0.04] bg-[#0a0a0a] hover:bg-[#1a1a1a] hover:border-[#c4b5a0]/30 transition-all duration-300"
+                      >
+                        <span className="text-[#f5f4f0]/80 font-['Inter'] text-sm group-hover:text-[#c4b5a0] transition-colors duration-300">
+                          Video Part 1
+                        </span>
+                        <ArrowUpRight size={14} className="text-[#f5f4f0]/30 group-hover:text-[#c4b5a0] transition-colors duration-300" />
+                      </a>
+                      
+                      <a
+                        href="https://youtube.com" // Placeholder for video 2
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="group flex items-center justify-between p-3 border border-white/[0.04] bg-[#0a0a0a] hover:bg-[#1a1a1a] hover:border-[#c4b5a0]/30 transition-all duration-300"
+                      >
+                        <span className="text-[#f5f4f0]/80 font-['Inter'] text-sm group-hover:text-[#c4b5a0] transition-colors duration-300">
+                          Video Part 2
+                        </span>
+                        <ArrowUpRight size={14} className="text-[#f5f4f0]/30 group-hover:text-[#c4b5a0] transition-colors duration-300" />
+                      </a>
+                    </div>
+                  </div>
                 ))}
               </div>
             </motion.div>
