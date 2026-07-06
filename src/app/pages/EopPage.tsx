@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { motion, useScroll } from "motion/react";
-import { ArrowLeft, BookOpen, Download } from "lucide-react";
+import { ArrowLeft, BookOpen, Download, ArrowUpRight } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { CustomCursor } from "../components/CustomCursor";
 import { Footer } from "../components/Footer";
@@ -184,6 +184,45 @@ export function EopPage() {
                     <h3 className="text-[#f5f4f0] text-lg font-['Syne'] font-bold mb-3">{item.title}</h3>
                     <p className="text-[#f5f4f0]/50 text-sm font-['Inter'] font-light leading-relaxed">{item.desc}</p>
                   </motion.div>
+                ))}
+              </div>
+            </motion.div>
+          </div>
+        </section>
+
+        {/* Weekly Placeholders */}
+        <section className="py-24 md:py-32 px-6 md:px-12 bg-[#0a0a0a]">
+          <div className="max-w-[1200px] mx-auto">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{ duration: 0.8 }}
+            >
+              <h2 className="text-[#f5f4f0] mb-6 font-['Syne'] font-bold" style={{ fontSize: "clamp(2rem, 3vw, 2.5rem)", letterSpacing: "-0.02em" }}>
+                Weekly Progress
+              </h2>
+              <div className="w-16 h-px bg-[#c4b5a0] mb-12" />
+              
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {Array.from({ length: 14 }).map((_, i) => (
+                  <a
+                    key={i}
+                    href="https://youtube.com" // Placeholder link
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group block p-6 border border-white/[0.05] bg-[#111111] hover:border-[#c4b5a0]/40 transition-colors duration-300"
+                  >
+                    <div className="flex items-center justify-between mb-3">
+                      <h3 className="text-[#f5f4f0] font-['Syne'] text-xl font-bold group-hover:text-[#c4b5a0] transition-colors duration-300">
+                        Week {i + 1}
+                      </h3>
+                      <ArrowUpRight size={18} className="text-[#f5f4f0]/30 group-hover:text-[#c4b5a0] transition-colors duration-300" />
+                    </div>
+                    <p className="text-[#f5f4f0]/50 font-['Inter'] text-sm font-light">
+                      Watch the video presentation for Week {i + 1}.
+                    </p>
+                  </a>
                 ))}
               </div>
             </motion.div>
