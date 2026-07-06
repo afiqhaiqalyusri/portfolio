@@ -125,3 +125,4 @@ This portfolio combines clean aesthetics with interactive storytelling to create
 ### Designed & Developed by Afiq Haiqal
 
 </div>
+
